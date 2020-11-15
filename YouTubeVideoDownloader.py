@@ -12,6 +12,7 @@ def download_video():
 
     mp4_file = YouTube(video_url).streams.get_highest_resolution().download()
 
+    # Hello
     if video_format == "mp3":
         print("Converting to mp3...")
 
@@ -26,7 +27,6 @@ def download_video():
 
         os.remove(mp4_file)
 
-        # Testing GitHub
         # Change file path e.g C:\Users\HP\Videos
         if directory:
             print("Moving to directory...")
